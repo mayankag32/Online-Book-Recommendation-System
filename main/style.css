@@ -1,0 +1,86 @@
+html { 
+  background: url(bg.jpg) no-repeat center center fixed;  
+  background-size: cover;
+}
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+/*  background: #F8F8FF;
+*/}
+
+.header {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: black ;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  /*font-family: 'MyWebFont', Fallback, sans-serif;*/
+  border-radius: 10px;
+  border: 2px solid #778899;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: black ;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
