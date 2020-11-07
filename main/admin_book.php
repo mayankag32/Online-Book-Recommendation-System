@@ -29,7 +29,7 @@
 			<th>Description</th>
 			<th>Price</th>
 			<th>Genre</th>
-			<!-- <th>Publisher</th> -->
+			<th>Publisher</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 		</tr>
@@ -42,6 +42,13 @@
 			<td><?php echo $row['book_descr']; ?></td>
 			<td><?php echo $row['book_price']; ?></td>
 			<td><?php echo $row['genre']; ?></td>
+			<?php 
+				$pub_id = $row['publisherid'];
+				$pub_query = "SELECT publisher_name from publisher WHERE publisherid = '$pub_id' ";
+				$res = mysqli_query($conn, $pub_query);
+				$row_pub = mysqli_fetch_array($res);
+			?>
+			<td><?php echo $row_pub[0]; ?></td>
 			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
 			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
 		</tr>
